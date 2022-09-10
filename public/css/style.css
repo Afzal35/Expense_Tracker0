@@ -1,0 +1,2300 @@
+body {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-style: normal;
+  overflow-x: hidden;
+  font-size: 16px;
+  color: #454545;
+  letter-spacing: 0.25px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
+  outline: none !important;
+}
+.d-new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.d-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.d-new-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+a {
+  transition: all 0.3s linear;
+}
+p {
+  line-height: 37.5px;
+}
+/*------------------ Home Page Css Start ------------------*/
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 10;
+  padding: 45px 0px;
+}
+header.active {
+  background: #10303a;
+}
+.login_menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.login_menu a {
+  display: block;
+  color: #fff !important;
+  font-weight: 500;
+  margin-left: 25px;
+}
+.btn {
+  border: 0px !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.login_menu .btn {
+  height: 72px;
+  width: 176px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background: #0099cc;
+}
+.login_menu .btn:hover {
+  background: #fff;
+  color: #0099cc !important;
+}
+.banner {
+  background: url(../images/banner.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 995px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.banner:after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: rgba(3, 23, 28, 0.58);
+}
+.pt-162 {
+  padding-top: 162px;
+}
+.banner .container {
+  position: relative;
+  z-index: 1;
+}
+.banner_text {
+  text-align: center;
+  max-width: 1035px;
+  margin: auto;
+}
+.banner_text h1 {
+  font-size: 42px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+.banner_text p {
+  color: #fff;
+  line-height: 37.5px;
+  margin-top: 20px;
+}
+.btn-blue {
+  height: 50px;
+  width: 312px;
+  background: #0099cc;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  color: #fff !important;
+  padding: 0px 10px;
+  font-weight: 500;
+}
+.btn-blue:hover {
+  background: #0389b5;
+}
+.banner_text .btn {
+  margin-top: 50px;
+}
+.courses_outer {
+  padding: 145px 0px 155px;
+}
+.title.title-center {
+  max-width: 830px;
+  margin: auto;
+}
+.title h2 {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: black;
+}
+.title p {
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+.courses_list {
+  margin-top: 80px;
+}
+.mlr-25 {
+  margin: 0px -25px;
+}
+.plr-25 {
+  padding: 0px 25px;
+}
+.courses_item {
+  display: block;
+  background: #f3f3f3;
+  border-radius: 33px;
+  width: 100%;
+  margin-bottom: 60px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.courses_item:hover {
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.courses_img {
+  height: 332px;
+}
+.courses_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top left;
+  border-radius: 30px 30px 0px 0px;
+}
+.courses_info {
+  min-height: calc(100% - 332px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 35px 35px;
+}
+.courses_info_top h3 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 35px;
+  color: #434343;
+}
+.courses_item:hover .courses_info_top h3 {
+  color: #0099cc;
+}
+.courses_info_top p {
+  font-size: 22.92px;
+  line-height: 29.17px;
+  color: #494949;
+  letter-spacing: 0.5px;
+  margin-top: 15px;
+}
+.courses_author {
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.courses_price h5 {
+  font-size: 25px;
+  font-weight: 900;
+  color: #0099cc;
+  letter-spacing: 0.5px;
+  font-family: "Raleway";
+}
+.courses_author_info {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.courses_author_img {
+  border-radius: 50%;
+  border: 2px solid #0099cc;
+  height: 73px;
+  width: 73px;
+}
+.courses_author_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.courses_author_info span {
+  width: calc(100% - 73px);
+  display: block;
+  padding-left: 18px;
+  font-weight: bold;
+  color: #4e4e4e;
+  letter-spacing: 0.5px;
+}
+.courses_price {
+  min-width: 110px;
+  text-align: right;
+}
+.view_more_btn {
+  margin-top: 60px;
+}
+footer {
+  background: #10303a;
+}
+.footer_block {
+  padding: 33px 0px;
+}
+.footer_left p {
+  color: #fff;
+  font-size: 19.79px;
+}
+.footer_left p a {
+  color: #fff;
+  font-weight: bold;
+}
+.footer_link ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer_link li {
+  margin-left: 35px;
+}
+.footer_link li:first-child {
+  margin-left: 0px;
+}
+.footer_link a {
+  color: #fff;
+  font-size: 19.79px;
+}
+.footer_link a:hover,
+.footer_left p a:hover {
+  opacity: 0.8;
+}
+/*------------------ Home Page Css End ------------------*/
+/*------------------ Course Details Page Css Start ------------------*/
+.banner_inner {
+  position: relative;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  min-height: 505px;
+  display: flex;
+  align-items: center;
+}
+.banner_inner::after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba(3, 23, 28, 0.58);
+}
+.banner_inner_text {
+  position: relative;
+  z-index: 1;
+  padding-top: 60px;
+}
+.banner_inner_text h1 {
+  color: #fff;
+  font-size: 58.33px;
+  line-height: 72.92px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family: "Montserrat";
+}
+.course_single_outer {
+  padding: 95px 0px 115px;
+}
+.course_single_block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.course_single_img {
+  width: 766px;
+}
+.course_single_img img {
+  width: 100%;
+  border-radius: 60px;
+}
+.course_single_info {
+  width: calc(100% - 766px);
+  padding-left: 55px;
+  margin-top: 20px;
+}
+.course_single_info p {
+  letter-spacing: 0.5px;
+  color: #454545;
+  margin-top: 15px;
+}
+h5.price {
+  font-size: 52.08px;
+  font-weight: 900;
+  color: #0099cc;
+  font-family: "Raleway";
+  letter-spacing: 0.5px;
+}
+.course_single_info .price {
+  margin-top: 40px;
+}
+.course_single_info .btn-blue {
+  margin-top: 40px;
+}
+.share_outer {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.share_text {
+  margin-right: 15px;
+}
+.share_text img {
+  margin-right: 10px;
+}
+.share_text span {
+  font-size: 29.1px;
+  font-weight: 600;
+  color: #b0b0b0;
+}
+.share_list li {
+  margin-right: 20px;
+}
+.share_list li a {
+  display: block;
+}
+.share_list li a:hover {
+  opacity: 0.8;
+}
+.description {
+  text-align: center;
+  margin-top: 145px;
+}
+.description p {
+  letter-spacing: 0.5px;
+  margin-top: 30px;
+  line-height: 45.83px;
+}
+.instructor_outer {
+  background: #f3f3f3;
+  padding: 65px 0px 80px;
+}
+.instructor_block {
+  margin-top: 45px;
+}
+.instructor_img {
+  width: 260px;
+  text-align: center;
+}
+.instructor_img img {
+  border: 3px solid #0099cc;
+  height: 157px;
+  width: 157px;
+  border-radius: 50%;
+}
+.instructor_img h4 {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 31.25px;
+  line-height: 35.81px;
+  color: #4e4e4e;
+  letter-spacing: 0.5px;
+}
+.instructor_info {
+  width: calc(100% - 260px);
+  padding-left: 33px;
+}
+.instructor_info p {
+  line-height: 45.83px;
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+}
+.curriculum_outer {
+  padding: 90px 0px;
+}
+.curriculum_list {
+  max-width: 1114px;
+  margin: 40px auto auto;
+}
+.curriculum_list li {
+  display: flex;
+  align-items: center;
+  background: #eaedee;
+  min-height: 95px;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 10px 20px 10px 40px;
+}
+.curriculum_head {
+  background: #dbe2e4 !important;
+}
+.curriculum_head h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #5b6c71;
+  font-family: "Montserrat";
+}
+.curriculum_list li p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Montserrat";
+  color: #657579;
+  width: calc(100% - 166px);
+  padding-right: 20px;
+}
+.btn-blue-small {
+  height: 50px !important;
+  width: 166px !important;
+  border-radius: 10px !important;
+}
+.faq_outer {
+  background: #f3f3f3;
+  padding: 65px 0px 100px;
+}
+.faq_list {
+  margin-top: 55px;
+  max-width: 1235px;
+}
+.faq_list li {
+  margin-bottom: 35px;
+}
+.faq_list li:last-child {
+  margin-bottom: 0px;
+}
+.faq_list h3 {
+  font-size: 33.33px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+.faq_list p {
+  line-height: 45px;
+  margin-top: 5px;
+  letter-spacing: 0.5px;
+}
+.get_start_outer {
+  text-align: center;
+  padding: 100px 0px 90px;
+}
+.get_start_outer h5 {
+  margin-top: 35px;
+}
+.get_start_outer .btn {
+  margin-top: 20px;
+}
+/*------------------ Course Details Page Css End ------------------*/
+/*------------------ Dasboard Page Css Start ------------------*/
+.header_dasboard {
+  padding: 0px !important;
+}
+.userMenu {
+  position: relative;
+}
+.user_info {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.user_info img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid #b1b1b1;
+}
+.user_info span {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #fff;
+  display: block;
+  padding-right: 25px;
+}
+.user_info_img {
+  margin-right: -20px;
+  padding: 27px 20px;
+}
+
+.userDropDown {
+  position: absolute;
+  right: -20px;
+  background: #fff;
+  box-shadow: 8px 0px 16px rgba(0, 0, 0, 0.17);
+  width: 337px;
+  top: 135px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+  -webkit-transition: transform 0.3s linear;
+  -moz-transition: transform 0.3s linear;
+  -ms-transition: transform 0.3s linear;
+  -o-transition: transform 0.3s linear;
+  transition: transform 0.3s linear;
+}
+.userMenu:hover .userDropDown {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.userDropDown ul {
+  padding: 20px 0px;
+}
+.userDropDown li {
+  font-size: 18.75px;
+  color: #7d7d7d;
+  letter-spacing: 0.5px;
+  display: block;
+  padding: 11.5px 25px 11.5px 35px;
+  cursor: pointer;
+}
+.userDropDown li:hover {
+  color: #0099cc;
+}
+.das_content {
+  background: #f2f2f2;
+
+  padding: 50px 0px;
+}
+.filter_box {
+  background: #fff;
+  margin-right: 35px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  padding: 5px 24px;
+}
+.filter_box:last-child {
+  margin-right: 0px;
+}
+.filter_box label {
+  margin: 0px;
+  color: #9a9a9a;
+  min-width: 150px;
+}
+.filter_box select {
+  border: 0px;
+  outline: none !important;
+  padding: 0px 15px;
+  font-size: 29.3px;
+  color: #303030;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 85px;
+  background: url(../images/icon-arrow-down.png) no-repeat right white;
+}
+.resizing_select {
+  display: none;
+}
+.form-control {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.das_search .form-control {
+  width: 410px;
+  height: 75px;
+  border: 0px !important;
+  padding: 0px 45px;
+  font-size: 27.05px;
+  color: #222;
+  border-radius: 15px;
+}
+.das_search .btn {
+  height: 75px;
+  width: 75px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0099cc;
+  border-radius: 15px;
+  border: 0px !important;
+  margin-left: 25px;
+}
+.dasboard_list {
+  margin: 110px 0px 90px;
+}
+.dasboard_item {
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  border-radius: 33px;
+  margin-bottom: 75px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.dasboard_item:hover {
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.dasboard_img {
+  height: 332px;
+}
+.dasboard_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  border-radius: 33px 33px 0px 0px;
+}
+.dasboard_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 332px);
+  padding: 40px 32px 35px;
+}
+.dasboard_info h3 {
+  font-size: 31.25px;
+  line-height: 41.67px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  color: #434343;
+}
+.dasboard_item:hover .dasboard_info h3 {
+  color: #0099cc;
+}
+.dasboard_info h6 {
+  display: block;
+  font-weight: 600;
+  font-size: 25px;
+  color: #0099cc;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+/*------------------ Dasboard Page Css End ------------------*/
+.toggleMenu {
+  font-size: 23px;
+  line-height: 23px;
+  transform: scale(1.2, 1);
+  color: #fff;
+  display: none;
+}
+.overlay {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+}
+.overlay.active {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  /*------------------ Home Page Css Start ------------------*/
+  body {
+    font-size: 16px;
+  }
+  p {
+    line-height: 28px;
+  }
+  header {
+    padding: 25px 0px;
+  }
+  .logo img {
+    width: 270px;
+  }
+
+  .login_menu .btn {
+    height: 50px;
+    width: 140px;
+  }
+
+  .banner_text {
+    max-width: 735px;
+  }
+  .banner_text p {
+    line-height: 32.5px;
+    margin-top: 15px;
+  }
+  .btn-blue {
+    height: 50px;
+    width: 190px;
+    font-size: 16px;
+  }
+  .banner_text .btn {
+    margin-top: 30px;
+  }
+  .pt-162 {
+    padding-top: 100px;
+  }
+  .banner {
+    min-height: 610px;
+  }
+  .courses_outer {
+    padding: 80px 0px;
+  }
+
+  .title.title-center {
+    max-width: 590px;
+  }
+  .title p {
+    margin-top: 5px;
+  }
+  .courses_list {
+    margin-top: 50px;
+  }
+  .mlr-25 {
+    margin: 0px -15px;
+  }
+  .plr-25 {
+    padding: 0px 15px;
+  }
+  .courses_item {
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+  .courses_img {
+    height: 232px;
+  }
+  .courses_img img {
+    border-radius: 20px 20px 0px 0px;
+  }
+  .courses_info {
+    min-height: calc(100% - 232px);
+    padding: 25px;
+  }
+
+  .courses_info_top p {
+    font-size: 17px;
+    line-height: 27px;
+    margin-top: 10px;
+  }
+  .courses_price h5 {
+    font-size: 21px;
+  }
+  .courses_price {
+    min-width: 100px;
+  }
+  .courses_author_img {
+    height: 60px;
+    width: 60px;
+  }
+  .courses_author_info span {
+    width: calc(100% - 60px);
+    padding-left: 13px;
+  }
+  .view_more_btn {
+    margin-top: 20px;
+  }
+  .footer_left p {
+    font-size: 16px;
+  }
+  .footer_link a {
+    font-size: 16px;
+  }
+  .footer_block {
+    padding: 25px 0px;
+  }
+  /*------------------ Home Page Css End ------------------*/
+  /*------------------ Course Details Page Css Start ------------------*/
+  .banner_inner {
+    min-height: 375px;
+  }
+  .banner_inner_text {
+    padding-top: 30px;
+  }
+  .banner_inner_text h1 {
+    font-size: 40.33px;
+    line-height: 56.92px;
+  }
+  .course_single_outer {
+    padding: 60px 0px 80px;
+  }
+  .course_single_img {
+    width: 550px;
+  }
+  .course_single_img img {
+    border-radius: 40px;
+  }
+  .course_single_info {
+    width: calc(100% - 550px);
+    padding-left: 35px;
+  }
+  .course_single_info p {
+    margin-top: 12px;
+  }
+  h5.price {
+    font-size: 41.08px;
+  }
+  .course_single_info .price {
+    margin-top: 30px;
+  }
+  .course_single_info .btn-blue {
+    margin-top: 37px;
+  }
+  .share_text span {
+    font-size: 24.1px;
+  }
+  .share_outer {
+    margin-top: 45px;
+  }
+  .share_list li {
+    margin-right: 15px;
+  }
+  .share_list li img {
+    width: 45px;
+  }
+  .description {
+    margin-top: 100px;
+  }
+  .description p {
+    margin-top: 15px;
+    line-height: 32px;
+  }
+  .instructor_img {
+    width: 230px;
+  }
+  .instructor_img img {
+    height: 145px;
+    width: 145px;
+  }
+  .instructor_img h4 {
+    margin-top: 22px;
+    font-size: 24.25px;
+    line-height: 24.81px;
+  }
+  .instructor_info {
+    width: calc(100% - 230px);
+    padding-left: 20px;
+  }
+  .instructor_info p {
+    line-height: 33px;
+  }
+  .instructor_block {
+    margin-top: 30px;
+  }
+  .curriculum_outer {
+    padding: 70px 0px;
+  }
+
+  .btn-blue-small {
+    height: 45px !important;
+    width: 125px !important;
+  }
+  .curriculum_list li p {
+    width: calc(100% - 125px);
+  }
+  .curriculum_list li {
+    min-height: 65px;
+    padding: 10px 20px 10px 30px;
+  }
+  .curriculum_list {
+    max-width: 900px;
+    margin: 30px auto auto;
+  }
+  .faq_outer {
+    padding: 60px 0px;
+  }
+  .faq_list h3 {
+    font-size: 28.33px;
+  }
+  .faq_list p {
+    line-height: 28px;
+  }
+  .faq_list li {
+    margin-bottom: 25px;
+  }
+  .faq_list {
+    margin-top: 35px;
+    max-width: 840px;
+  }
+  .get_start_outer {
+    padding: 70px 0px 60px;
+  }
+  .get_start_outer h5 {
+    margin-top: 25px;
+  }
+  /*------------------ Course Details Page Css End ------------------*/
+  /*------------------ Dasboard Page Css Start ------------------*/
+  .user_info span {
+    font-size: 17px;
+    padding-right: 10px;
+  }
+  .user_info img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #b1b1b1;
+  }
+  .user_info_img {
+    margin-right: -15px;
+    padding: 20px 15px;
+  }
+
+  .userDropDown {
+    right: -15px;
+    width: 275px;
+    top: 100px;
+  }
+  .userDropDown ul {
+    padding: 15px 0px;
+  }
+  .userDropDown li {
+    font-size: 16px;
+    padding: 7px 15px;
+  }
+  .filter_box {
+    margin-right: 15px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    width: 300px;
+  }
+  .filter_box label {
+    min-width: 95px;
+  }
+  .filter_box select {
+    font-size: 18px;
+    width: 175px;
+    background-size: 13px;
+  }
+  .das_search .form-control {
+    width: 300px;
+    height: 60px;
+    padding: 0px 20px;
+    font-size: 17px;
+    border-radius: 10px;
+  }
+  .das_search .btn {
+    height: 60px;
+    width: 60px;
+    padding: 0px;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+  .das_search .btn img {
+    width: 25px;
+  }
+  .dasboard_list {
+    margin: 60px 0px 40px;
+  }
+  .dasboard_item {
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+  .dasboard_img {
+    height: 232px;
+  }
+  .dasboard_img img {
+    border-radius: 20px 20px 0px 0px;
+  }
+  .dasboard_info {
+    min-height: calc(100% - 232px);
+    padding: 25px;
+  }
+  .dasboard_info h3 {
+    font-size: 23px;
+    line-height: 34.67px;
+  }
+  .dasboard_info h6 {
+    font-size: 20px;
+    margin-top: 9px;
+  }
+  /*------------------ Dasboard Page Css End ------------------*/
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /*------------------ Home Page Css Start ------------------*/
+  body {
+    font-size: 16px;
+  }
+  p {
+    line-height: 27px;
+  }
+  header {
+    padding: 25px 0px;
+  }
+  .logo img {
+    width: 270px;
+  }
+
+  .login_menu .btn {
+    height: 50px;
+    width: 140px;
+  }
+  .pt-162 {
+    padding-top: 70px;
+  }
+  .banner {
+    min-height: 600px;
+  }
+  .banner_text {
+    max-width: 685px;
+  }
+
+  .banner_text p {
+    line-height: 31.5px;
+    margin-top: 17px;
+  }
+  .btn-blue {
+    height: 50px;
+    width: 210px;
+  }
+  .banner_text .btn {
+    margin-top: 30px;
+  }
+  .courses_outer {
+    padding: 70px 0px;
+  }
+  .title.title-center {
+    max-width: 500px;
+  }
+
+  .courses_list {
+    margin-top: 40px;
+  }
+  .mlr-25 {
+    margin: 0px -10px;
+  }
+  .plr-25 {
+    padding: 0px 10px;
+  }
+  .courses_img {
+    height: 191px;
+  }
+  .courses_img img {
+    border-radius: 20px 20px 0px 0px;
+  }
+  .courses_item {
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+  .courses_info {
+    min-height: calc(100% - 191px);
+    padding: 20px;
+  }
+
+  .courses_info_top p {
+    font-size: 16px;
+    line-height: 27px;
+    margin-top: 10px;
+  }
+  .courses_author {
+    margin-top: 25px;
+  }
+  .courses_price h5 {
+    font-size: 20px;
+  }
+  .courses_price {
+    min-width: 90px;
+  }
+  .courses_author_img {
+    height: 40px;
+    width: 40px;
+  }
+  .courses_author_info span {
+    width: calc(100% - 40px);
+    padding-left: 9px;
+  }
+  .view_more_btn {
+    margin-top: 20px;
+  }
+  .footer_left p {
+    font-size: 16px;
+  }
+  .footer_link a {
+    font-size: 16px;
+  }
+  .footer_block {
+    padding: 20px 0px;
+  }
+  /*------------------ Home Page Css End ------------------*/
+  /*------------------ Course Details Page Css Start ------------------*/
+  .banner_inner {
+    min-height: 350px;
+  }
+  .banner_inner_text {
+    padding-top: 40px;
+  }
+  .banner_inner_text h1 {
+    font-size: 41.33px;
+    line-height: 51.92px;
+  }
+  .instructor_outer {
+    padding: 45px 0px 45px;
+  }
+  .instructor_img {
+    width: 225px;
+  }
+  .instructor_img img {
+    height: 140px;
+    width: 140px;
+  }
+  .instructor_img h4 {
+    margin-top: 20px;
+    font-size: 22.25px;
+    line-height: 27.81px;
+  }
+  .instructor_info {
+    width: calc(100% - 225px);
+    padding-left: 15px;
+  }
+  .instructor_info p {
+    line-height: 30px;
+  }
+  .curriculum_outer {
+    padding: 60px 0px;
+  }
+  .curriculum_list {
+    margin: 30px auto auto;
+  }
+  .curriculum_list li {
+    min-height: 65px;
+    padding: 10px 20px 10px 30px;
+  }
+
+  .btn-blue-small {
+    height: 45px !important;
+    width: 135px !important;
+  }
+  .curriculum_list li p {
+    width: calc(100% - 135px);
+  }
+  .faq_outer {
+    padding: 55px 0px;
+  }
+  .faq_list {
+    margin-top: 30px;
+    max-width: 745px;
+  }
+  .faq_list li {
+    margin-bottom: 25px;
+  }
+  .faq_list h3 {
+    font-size: 26.33px;
+  }
+  .faq_list p {
+    line-height: 27px;
+  }
+  .get_start_outer {
+    padding: 60px 0px;
+  }
+  .course_single_outer {
+    padding: 60px 0px;
+  }
+  .course_single_img {
+    width: 450px;
+  }
+  .course_single_img img {
+    border-radius: 30px;
+  }
+  .course_single_info {
+    width: calc(100% - 450px);
+    padding-left: 25px;
+    margin-top: 10px;
+  }
+  .course_single_info .title h2 {
+    font-size: 30px;
+    line-height: 46.92px;
+  }
+  .course_single_info p {
+    margin-top: 10px;
+  }
+  .course_single_info .price {
+    margin-top: 20px;
+  }
+  h5.price {
+    font-size: 30px;
+  }
+  .course_single_info .btn-blue {
+    margin-top: 25px;
+  }
+  .share_text span {
+    font-size: 21.1px;
+  }
+  .share_list li {
+    margin-right: 12px;
+  }
+  .share_outer {
+    margin-top: 35px;
+  }
+  .share_list li img {
+    width: 40px;
+  }
+  .description {
+    margin-top: 60px;
+  }
+  .description p {
+    margin-top: 15px;
+    line-height: 29px;
+  }
+  /*------------------ Course Details Page Css End ------------------*/
+  /*------------------ Dasboard Page Css Start ------------------*/
+  .user_info span {
+    font-size: 14px;
+    padding-right: 15px;
+  }
+  .user_info_img {
+    margin-right: -15px;
+    padding: 20px 15px;
+  }
+  .user_info img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .userDropDown {
+    right: -15px;
+    width: 250px;
+    top: 100px;
+  }
+  .userDropDown ul {
+    padding: 10px 0px;
+  }
+  .userDropDown li {
+    font-size: 15px;
+    padding: 7px 15px;
+  }
+  .filter_box {
+    margin-right: 10px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px 15px;
+  }
+  .filter_box label {
+    min-width: 85px;
+  }
+  .filter_box select {
+    padding: 0px 15px;
+    font-size: 17px;
+    width: 70px;
+    background-size: 13px;
+  }
+  .das_search .form-control {
+    width: 250px;
+    height: 50px;
+    padding: 0px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  .das_search .btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+  .das_search .btn img {
+    width: 24px;
+  }
+  .dasboard_list {
+    margin: 50px 0px 30px;
+  }
+  .dasboard_img {
+    height: 191px;
+  }
+  .dasboard_item {
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+  .dasboard_img img {
+    border-radius: 20px 20px 0px 0px;
+  }
+  .dasboard_info {
+    min-height: calc(100% - 191px);
+    padding: 20px;
+  }
+  .dasboard_info h3 {
+    font-size: 21.25px;
+    line-height: 27.67px;
+  }
+  .dasboard_info h6 {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+  /*------------------ Dasboard Page Css End ------------------*/
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /*------------------ Home Page Css Start ------------------*/
+  body {
+    font-size: 16px;
+  }
+  p {
+    line-height: 27px;
+  }
+  header {
+    padding: 20px 0px;
+  }
+  .logo img {
+    width: 220px;
+  }
+
+  .login_menu .btn {
+    height: 45px;
+    width: 130px;
+  }
+  .pt-162 {
+    padding-top: 85px;
+  }
+  .banner {
+    min-height: 530px;
+  }
+  .banner_text h1 {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .banner_text p {
+    line-height: 30px;
+    margin-top: 15px;
+  }
+  .btn-blue {
+    height: 50px;
+    width: 210px;
+    font-size: 16px;
+  }
+  .banner_text .btn {
+    margin-top: 25px;
+  }
+  .courses_outer {
+    padding: 60px 0px;
+  }
+  .title.title-center {
+    max-width: 500px;
+  }
+  .title h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .courses_list {
+    margin-top: 40px;
+  }
+  .mlr-25 {
+    margin: 0px -10px;
+  }
+  .plr-25 {
+    padding: 0px 10px;
+  }
+  .courses_item {
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+  .courses_img {
+    height: 216px;
+  }
+  .courses_info {
+    min-height: calc(100% - 216px);
+    padding: 20px;
+  }
+
+  .courses_info_top p {
+    font-size: 16px;
+    line-height: 27px;
+    margin-top: 10px;
+  }
+  .courses_author {
+    margin-top: 25px;
+  }
+  .courses_price h5 {
+    font-size: 21px;
+  }
+  .courses_price {
+    min-width: 90px;
+  }
+  .courses_author_img {
+    height: 50px;
+    width: 50px;
+  }
+  .courses_author_info span {
+    width: calc(100% - 50px);
+    padding-left: 13px;
+  }
+  .view_more_btn {
+    margin-top: 30px;
+  }
+  .footer_block {
+    padding: 20px 0px;
+  }
+  .footer_left p {
+    font-size: 14px;
+  }
+  .footer_link a {
+    font-size: 14px;
+  }
+  .footer_link li {
+    margin-left: 20px;
+  }
+  /*------------------ Home Page Css End ------------------*/
+  /*------------------ Course Details Page Css Start ------------------*/
+  .banner_inner {
+    min-height: 320px;
+  }
+  .banner_inner_text {
+    padding-top: 20px;
+  }
+  .banner_inner_text h1 {
+    font-size: 36px;
+    line-height: 48.92px;
+  }
+  .course_single_outer {
+    padding: 50px 0px;
+  }
+  .course_single_img {
+    width: 360px;
+  }
+  .course_single_img img {
+    border-radius: 30px;
+  }
+  .course_single_info {
+    width: calc(100% - 360px);
+    padding-left: 25px;
+    margin-top: 0px;
+  }
+  .course_single_info .title h2 {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .course_single_info p {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .course_single_info .price {
+    margin-top: 10px;
+  }
+  h5.price {
+    font-size: 26.08px;
+  }
+  .course_single_info .btn-blue {
+    margin-top: 16px;
+  }
+  .share_text span {
+    font-size: 16.1px;
+  }
+  .share_text img {
+    margin-right: 7px;
+    width: 16px;
+  }
+  .share_list li {
+    margin-right: 10px;
+  }
+  .share_list li img {
+    width: 35px;
+  }
+  .share_outer {
+    margin-top: 30px;
+  }
+  .description {
+    margin-top: 50px;
+  }
+  .description p {
+    margin-top: 11px;
+    line-height: 26px;
+  }
+  .instructor_outer {
+    padding: 45px 0px;
+  }
+  .instructor_img img {
+    height: 120px;
+    width: 120px;
+  }
+  .instructor_img h4 {
+    margin-top: 20px;
+    font-size: 23.25px;
+    line-height: 26.81px;
+  }
+  .instructor_img {
+    width: 210px;
+  }
+  .instructor_info {
+    width: calc(100% - 210px);
+    padding-left: 20px;
+  }
+  .instructor_info p {
+    line-height: 29px;
+  }
+  .instructor_block {
+    margin-top: 30px;
+  }
+  .curriculum_outer {
+    padding: 50px 0px;
+  }
+  .curriculum_list li {
+    min-height: 60px;
+    padding: 10px 20px;
+  }
+
+  .btn-blue-small {
+    height: 40px !important;
+    width: 100px !important;
+    font-size: 16px !important;
+  }
+  .curriculum_list li p {
+    width: calc(100% - 100px);
+  }
+  .curriculum_list {
+    margin: 25px auto auto;
+  }
+  .faq_outer {
+    padding: 50px 0px;
+  }
+  .faq_list h3 {
+    font-size: 24px;
+  }
+  .faq_list p {
+    line-height: 26px;
+  }
+  .faq_list li {
+    margin-bottom: 25px;
+  }
+  .faq_list {
+    margin-top: 35px;
+  }
+  .get_start_outer {
+    padding: 60px 0px;
+  }
+  .get_start_outer h5 {
+    margin-top: 29px;
+    font-size: 33px !important;
+  }
+  /*------------------ Course Details Page Css End ------------------*/
+  /*------------------ Dasboard Page Css Start ------------------*/
+  .user_info img {
+    height: 50px;
+    width: 50px;
+  }
+  .user_info span {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+  .user_info_img {
+    margin-right: -15px;
+    padding: 15px;
+  }
+
+  .userDropDown {
+    right: -15px;
+    width: 250px;
+    top: 80px;
+  }
+  .userDropDown ul {
+    padding: 10px 0px;
+  }
+  .userDropDown li {
+    font-size: 15px;
+    padding: 7px 15px;
+  }
+  .filter_left {
+    width: 100%;
+  }
+  .filter_box {
+    margin-right: 30px;
+    height: 50px;
+    width: calc(50% - 15px);
+    border-radius: 10px;
+    padding: 5px 15px;
+  }
+  .filter_box label {
+    min-width: 85px;
+  }
+  .filter_box select {
+    padding: 0px 15px;
+    font-size: 16px;
+    width: calc(100% - 85px) !important;
+    background-size: 12px;
+  }
+  .das_search {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .das_search .form-control {
+    width: calc(100% - 60px);
+    height: 50px;
+    padding: 0px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  .das_search .btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+  .das_search .btn img {
+    width: 24px;
+  }
+  .dasboard_list {
+    margin: 50px 0px 0px;
+  }
+  .dasboard_img {
+    height: 216px;
+  }
+  .dasboard_item {
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+  .dasboard_img img {
+    border-radius: 20px 20px 0px 0px;
+  }
+  .dasboard_info {
+    height: calc(100% - 216px);
+    padding: 20px;
+  }
+  .dasboard_info h3 {
+    font-size: 22.25px;
+    line-height: 27.67px;
+  }
+  .dasboard_info h6 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  /*------------------ Dasboard Page Css End ------------------*/
+}
+@media (max-width: 767px) {
+  /*------------------ Home Page Css Start ------------------*/
+  body {
+    font-size: 15px;
+  }
+  p {
+    line-height: 27px;
+  }
+  header {
+    padding: 20px 0px;
+  }
+  .logo img {
+    width: 200px;
+  }
+  .header_menu {
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    width: 280px;
+    height: 100%;
+    z-index: 10;
+    background: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 20%);
+    padding: 20px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .header_menu.active {
+    right: 0px;
+  }
+  .login_menu {
+    display: block;
+  }
+  .login_menu a {
+    font-size: 16px;
+    color: #000 !important;
+    margin-left: 0px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0px;
+  }
+  .login_menu .btn {
+    height: 50px;
+    width: 100%;
+    color: #fff !important;
+    padding: 0px;
+    margin-top: 15px;
+  }
+  .pt-162 {
+    padding-top: 70px;
+  }
+  .banner {
+    min-height: 530px;
+  }
+  .banner_text h1 {
+    font-size: 29px;
+    line-height: 40px;
+  }
+  .banner_text p {
+    line-height: 27px;
+    margin-top: 15px;
+  }
+  .btn-blue {
+    height: 50px;
+    width: 163px;
+    font-size: 15px;
+  }
+  .banner_text .btn {
+    margin-top: 20px;
+  }
+  .courses_outer {
+    padding: 50px 0px;
+  }
+  .title h2 {
+    font-size: 26px;
+    line-height: 37px;
+  }
+  .title p {
+    margin-top: 5px;
+  }
+  .courses_list {
+    margin-top: 40px;
+  }
+  .courses_img {
+    height: auto;
+  }
+  .courses_img img {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .courses_item {
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  .courses_info {
+    min-height: initial;
+    padding: 20px;
+  }
+
+  .courses_info_top p {
+    font-size: 15px;
+    line-height: 27px;
+    margin-top: 7px;
+  }
+  .courses_author {
+    margin-top: 20px;
+  }
+  .courses_price h5 {
+    font-size: 19px;
+  }
+  .courses_price {
+    min-width: 85px;
+  }
+  .courses_author_img {
+    height: 40px;
+    width: 40px;
+  }
+  .courses_author_info span {
+    width: calc(100% - 40px);
+    padding-left: 9px;
+  }
+  .view_more_btn {
+    margin-top: 0px;
+  }
+  .mlr-25 {
+    margin: 0px;
+  }
+  .plr-25 {
+    padding: 0px;
+  }
+  .footer_left {
+    width: 100%;
+    text-align: center;
+  }
+  .footer_block {
+    padding: 15px 0px;
+  }
+  .footer_left p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .footer_link {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .footer_link a {
+    font-size: 14px;
+  }
+  .footer_link ul {
+    justify-content: center;
+  }
+  .footer_link li {
+    margin: 0px 10px;
+  }
+  /*------------------ Home Page Css End ------------------*/
+  /*------------------ Course Details Page Css Start ------------------*/
+  .banner_inner {
+    min-height: 270px;
+  }
+  .banner_inner_text {
+    padding-top: 17px;
+  }
+  .banner_inner_text h1 {
+    font-size: 29px;
+    line-height: 40px;
+  }
+  .course_single_outer {
+    padding: 50px 0px;
+  }
+  .course_single_img {
+    width: 100%;
+  }
+  .course_single_img img {
+    border-radius: 15px;
+  }
+  .course_single_info {
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 20px;
+  }
+  .course_single_info p {
+    margin-top: 10px;
+  }
+  .course_single_info .price {
+    margin-top: 20px;
+  }
+  h5.price {
+    font-size: 30px;
+  }
+  .course_single_info .btn-blue {
+    margin-top: 20px;
+  }
+  .share_outer {
+    margin-top: 30px;
+  }
+  .share_text span {
+    font-size: 17px;
+  }
+  .share_text img {
+    margin-right: 7px;
+    width: 16px;
+  }
+  .share_list li {
+    margin-right: 10px;
+  }
+  .share_list li img {
+    width: 35px;
+  }
+  .description {
+    margin-top: 50px;
+  }
+  .description p {
+    margin-top: 10px;
+    line-height: 27px;
+  }
+  .instructor_outer {
+    padding: 40px 0px;
+  }
+  .instructor_outer .title {
+    text-align: center;
+  }
+  .instructor_block {
+    margin-top: 30px;
+  }
+  .instructor_img {
+    width: 100%;
+  }
+  .instructor_img img {
+    height: 120px;
+    width: 120px;
+  }
+  .instructor_img h4 {
+    margin-top: 15px;
+    font-size: 24.25px;
+    line-height: 28.81px;
+  }
+  .instructor_info {
+    width: 100%;
+    padding-left: 0px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .instructor_info p {
+    line-height: 27px;
+  }
+  .curriculum_outer {
+    padding: 50px 0px;
+  }
+  .curriculum_list {
+    margin: 20px auto auto;
+  }
+  .curriculum_list li {
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+  .curriculum_head h4 {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .curriculum_list li p {
+    font-size: 16px;
+    width: 100%;
+    padding-right: 0px;
+    line-height: 22px;
+  }
+  .btn-blue-small {
+    margin: 10px auto 0px;
+    height: 40px !important;
+    width: 125px !important;
+    font-size: 15px !important;
+  }
+  .faq_outer {
+    padding: 40px 0px;
+  }
+  .faq_list {
+    margin-top: 30px;
+  }
+  .faq_list h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .faq_list p {
+    line-height: 25px;
+  }
+  .faq_list li {
+    margin-bottom: 25px;
+  }
+  .get_start_outer {
+    padding: 50px 0px;
+  }
+  .get_start_outer h5 {
+    margin-top: 15px;
+  }
+  .get_start_outer .btn {
+    margin-top: 10px;
+  }
+  /*------------------ Course Details Page Css End ------------------*/
+  /*------------------ Dasboard Page Css Start ------------------*/
+  .user_info span {
+    display: none;
+  }
+  .user_info_img {
+    margin-right: -12px;
+    padding: 15px 12px;
+  }
+  .user_info img {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #b1b1b1;
+  }
+  .userDropDown {
+    right: -12px;
+    width: 250px;
+    top: 80px;
+  }
+  .userDropDown ul {
+    padding: 11px 0px;
+  }
+  .userDropDown li {
+    font-size: 14px;
+    padding: 7px 15px;
+  }
+
+  .filter_box label {
+    min-width: 100px;
+  }
+  .filter_box {
+    margin-right: 0px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px 15px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .filter_box select {
+    padding: 0px 15px;
+    font-size: 17.3px;
+    width: 100% !important;
+    background-size: 12px;
+  }
+  .das_search .form-control {
+    width: calc(100% - 60px);
+    height: 50px;
+    padding: 0px 15px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+  .das_search {
+    width: 100%;
+  }
+  .das_search .btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+  .das_search .btn img {
+    width: 23px;
+  }
+  .dasboard_list {
+    margin: 40px 0px 10px;
+  }
+  .dasboard_item {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  .dasboard_img {
+    height: initial;
+  }
+  .dasboard_img img {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .dasboard_info {
+    height: initial;
+    padding: 20px;
+  }
+  .dasboard_info h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .dasboard_info h6 {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  .toggleMenu {
+    display: block;
+  }
+  /*------------------ Dasboard Page Css End ------------------*/
+}
+
+/* ----------------------------------------------------------------------------------- */
+/*------------------ Common Css Start ------------------*/
+.textfield {
+  height: 3.2rem;
+  border-radius: 7px;
+  border: none;
+}
+.background_color_grey {
+  background: #f2f2f2;
+}
+.color_b_font_500 {
+  color: black;
+  font-weight: 500;
+}
+.sky_blue {
+  color: #0099cc !important;
+}
+.f_w_500 {
+  font-weight: 500;
+}
+/*------------------ Common Css End ------------------*/
+
+/*------------------ Contact Page Css Start ------------------*/
+.Profile_manage ul li {
+  padding-bottom: 28px;
+}
+.Profile_manage a {
+  padding-left: 10px;
+  color: gray;
+}
+.fw_500 {
+  font-weight: 500;
+}
+
+/*------------------ Contact Page Css End ------------------*/
+
+/*----------- curriculum_curriculum Page Css Start----------*/
+.course_curriculum_img {
+  border-radius: 30px;
+}
+.course_curriculum_img img {
+  width: 100%;
+  height: 12rem;
+  border-radius: 30px;
+}
+.percentage {
+  border-radius: 10px;
+  background: #0099cc34;
+  height: 1.5rem;
+  width: 100%;
+}
+
+/*----------- curriculum_curriculum Page Css End----------*/
+
+/* <------------Order Summary Page Css Start-------------> */
+
+/* The order_summary_container */
+.order_summary_container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.order_summary_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  /* background-color: #eee; */
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.order_summary_container:hover input ~ .checkmark {
+  background-color: white;
+}
+
+/* When the radio button is checked, add a blue background */
+.order_summary_container input:checked ~ .checkmark {
+  border: 2px solid;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.order_summary_container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.order_summary_container .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: grey;
+}
+/* <------------Order Summary Page Css End-------------> */
+/*<--------------- Author details Page Css Start ------------->*/
+.progress {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  position: relative;
+  margin: 15px 0;
+  height: 30px;
+  width: 300px;
+}
+
+.progress-done {
+  background: linear-gradient(to left, #52507a, #72b4ff);
+  box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+/* hide featured courses bootstrap css  */
+.card-header {
+  padding: 0 !important;
+  margin-bottom: 0;
+  background-color: white !important;
+  border-bottom: 1px solid white !important;
+}
+.card {
+  border: none;
+}
+
+/*  */
+/*<--------------- Author details Page Css End ------------->*/
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .Profile_manage {
+    margin-left: 20px;
+  }
+  .Profile_manage a {
+    font-size: 0.8rem;
+  }
+
+  .course_curriculum_img img {
+    width: 100%;
+    height: 30rem;
+    border-radius: 30px;
+  }
+}
+
+/* @media(min-width:400px) and (max-width:600px){
+
+
+}
+@media(min-width:300px) and (max-width:400px){
+
+
+}
+@media(min-width:250px) and (max-width:300px){
+
+
+} */
